@@ -1,37 +1,35 @@
 .cabecalho {
-    background: linear-gradient(#051A2D, #004E99, #438BD3);
+    /* background: linear-gradient(#051A2D, #004E99, #438BD3); */
+    background-image: linear-gradient(to top,  #30cfd0 0%, #330867 100%);
 }
 
 .logo__imagem {
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
     .cabecalho {
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        width: 100vw;
         height: 50px;
         justify-content: space-between;
+        width: 100vw;
     }
 
     .logo {
-        /* width: 90px;
-        height: 16px;
-        color: #ffffff; */
-        z-index: 1;
         margin-left: 20px;
+        z-index: 1;
     }
 
     .menu__burguer {
-        width: 40px;
-        height: 40px;
-        margin: 5px 20px 0 0;
         border-radius: 50%;
         box-shadow: 0 0 0 0 #808080, 0 0 0 0 grey;
+        height: 40px;
+        margin: 5px 20px 0 0;
         transition: box-shadow 1s cubic-bezier(0, 0.73, 0.97, 0.4);
+        width: 40px;
     }
 
     .menu__burguer:hover {
@@ -39,15 +37,15 @@
     }
 
     .burguer {
-        position: relative;
-        display: block;
         background: #ffffff;
-        width: 22px;
-        height: 4px;
         border-radius: 5px;
-        top: 18px;
+        display: block;
+        height: 4px;
+        position: relative;
         left: 9px;
+        top: 18px;
         transition: .5s ease-in-out;
+        width: 22px;
     }
 
     .burguer::before, .burguer::after {
@@ -74,7 +72,9 @@
     }
 
     #check__burguer:checked ~ label .menu__burguer {
+        background: #051a2d;
         box-shadow: 0 0 0 100vw #051a2d, 0 0 0 100vh #051a2d;
+        position: relative;
     }
 
     #check__burguer:checked ~ label .burguer {
@@ -82,36 +82,36 @@
     }
 
     #check__burguer:checked ~ label .burguer:before {
-        transform: rotate(90deg);
         top: 0;
+        transform: rotate(90deg);
     }
 
     #check__burguer:checked ~ label .burguer::after {
-        transform: rotate(90deg);
         bottom: 0;
+        transform: rotate(90deg);
     }
 
     #check__burguer:checked ~ .menu__lista{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 100vw;
+        display: flex;
         height: 320px;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 360px;
         opacity: 1;
+        position: absolute;
         transition: .25s .5s ease-in-out;
+        width: 100vw;
     }
 
     .menu__lista {
-        width: 100vw;
         opacity: 0;
+        width: 100vw;
     } 
 
     .menu__item {
-        margin-bottom: 25px;
-        font-size: 25px;
         color: aliceblue;
+        font-size: 25px;
+        margin-bottom: 25px;
     }
 }
