@@ -9,3 +9,9 @@ Secundaria (PARA LETRAS E/OU ICONES):
 #FFD428
 #4E586E
 FFFFFF
+
+fonte:
+
+Orbitron (titulo e subtitulo do logo)
+
+Roboto para os demais.
