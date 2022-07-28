@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .conteudo {
     display: flex;
 }
@@ -76,4 +77,84 @@
         margin-bottom: 20px;
         width: 95%;
     }
+=======
+.conteudo {
+    display: flex;
+}
+
+.banner {
+    /* background: linear-gradient(#438BD3, #004E99, #051A2D); */
+    background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__conteudo {
+    color: #FFFFFF;
+}
+
+.banner__titulo {
+    font-family: 'Orbitron';
+    font-weight: 500;
+}
+
+.banner__subtitulo {
+    font-family: 'Orbitron';
+    font-weight: 400;
+}
+
+.banner__descricao {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.banner__imagem {
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .conteudo{
+        flex-direction: column;
+    }
+    
+    .banner {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner__conteudo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .banner__titulo{
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .banner__subtitulo {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .banner__descricao {
+        border-bottom: #FFFFFF solid 1px;
+        border-top: #FFFFFF solid 1px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .banner__imagem {
+        border-radius: 20%;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+>>>>>>> 3146dc6bebfa8aa4a1b4a50d58919ec4aeec91e7
 }
