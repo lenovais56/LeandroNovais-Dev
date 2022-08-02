@@ -1,11 +1,47 @@
 .cabecalho {
-    /* background: linear-gradient(#051A2D, #004E99, #438BD3); */
-    background-image: linear-gradient(to top,  #30cfd0 0%, #330867 100%);
+    align-items: center;
+    background-color: #111111;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-around;
+    width: 100vw;
+    border-bottom: solid 1px #00FFEA;
+    box-shadow: inset 0 0 10px #00FFEA, 0 0 10px #00FFEA;
+}
+
+
+.logo {
+    color: #00FFEA;
+    font-family: 'Orbitron';
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 20px;
 }
 
 .logo__imagem {
     height: 50px;
     width: 50px;
+}
+
+#check__burguer {
+    display: none;
+}
+
+.menu__lista {
+    display: flex;
+    color: #00FFEA;
+}
+
+.menu__item {
+    margin-right: 15px;
+}
+
+.menu__link {
+    border-left: solid 1px #00FFEA;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-left: 4px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
@@ -19,7 +55,6 @@
     }
 
     .logo {
-        margin-left: 20px;
         z-index: 1;
     }
 
@@ -33,11 +68,11 @@
     }
 
     .menu__burguer:hover {
-        box-shadow: 0 0 0 1px #051a2d, 0 0 0 1px #051a2d;
+        box-shadow: 0 0 0 1px #111111, 0 0 0 1px #111111;
     }
 
     .burguer {
-        background: #ffffff;
+        background: #00FFEA;
         border-radius: 5px;
         display: block;
         height: 4px;
@@ -49,7 +84,7 @@
     }
 
     .burguer::before, .burguer::after {
-        background: #ffffff;
+        background: #00FFEA;
         content: '';
         display: block;
         width: 100%;

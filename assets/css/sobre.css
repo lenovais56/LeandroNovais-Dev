@@ -1,0 +1,49 @@
+.sobre {
+    background-image: linear-gradient(to bottom, #111111, #111111, #f0f0f0, #f0f0f0, #f0f0f0, #f0f0f0);
+    display: flex;
+    align-items: center;
+}
+
+.sobre__titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    color: #00FFEA;
+}
+
+.sobre__descricao, .sobre__descricao--conteudo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.sobre__descricao--conteudo {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .sobre {
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .sobre__titulo {
+        font-size: 32px;
+        letter-spacing: 4px;
+        margin-top: 20px;
+    }
+
+    .sobre__descricao {
+        color: #f0f0f0;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-align: justify;
+        width: 80%;
+    }
+
+    .sobre__descricao--conteudo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

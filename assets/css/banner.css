@@ -1,35 +1,68 @@
 .conteudo {
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .banner {
-    /* background: linear-gradient(#438BD3, #004E99, #051A2D); */
-    background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+    align-items: center;
+    background-color: #111111;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 30px;
+    width: 100vw;
 }
 
 .banner__conteudo {
-    color: #FFFFFF;
+    color: #FDFDFD;
+    margin: 20px;
+    width: 50%;
 }
 
 .banner__titulo {
+    color: #00FFEA;
     font-family: 'Orbitron';
+    font-size: 30px;
     font-weight: 500;
 }
 
 .banner__subtitulo {
     font-family: 'Orbitron';
+    font-size: 18px;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 .banner__descricao {
     font-family: 'Roboto';
+    font-size: 20px;
     font-weight: 400;
+    margin-top: 30px;
+    width: 50%;
 }
 
 .banner__imagem {
-    border-radius: 50%;
+    border-radius: 40%;
+    width: 600px;
+    z-index: 1;
+}
+
+.banner__btn {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 40px 0 40px 0;
+}
+
+.btn__padrao {
+    background: transparent;
+    border: solid 1px #00FFEA;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 60px;
+    box-shadow: inset 0 0 10px #00FFEA, 0 0 10px #00FFEA;
+    width: 60px;
 }
 
 

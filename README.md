@@ -1,14 +1,11 @@
 PROJETO EM ANDAMENTO
 
-Paleta de cores para teste:
+Paleta de cores:
 
-Primaria (TALVEZ GRADIENTE):
-#F54864 / #F78361 
-
-Secundaria (PARA LETRAS E/OU ICONES):
-#FFD428
-#4E586E
-FFFFFF
+BRANCO: #FDFDFD
+AZUL: #00FFEA
+PRETO: #111111
+CINZA: #F0F0F0
 
 fonte:
 
