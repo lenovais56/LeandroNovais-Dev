@@ -28,11 +28,28 @@
 }
 
 .banner__subtitulo {
+    animation: pisca normal infinite .8s, escrever normal 5s steps(19) both;
+    border-right: 2px solid #FDFDFD;
     font-family: 'Orbitron';
     font-size: 18px;
     font-weight: 400;
     margin-top: 10px;
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
+
+@keyframes pisca {
+    100%{
+        border-right-color: transparent;
+    }
+  }
+
+  @keyframes escrever {
+    100%{
+        max-width: 100%;
+    }
+  }
 
 .banner__descricao {
     font-family: 'Roboto';
