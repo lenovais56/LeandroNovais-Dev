@@ -28,7 +28,7 @@
 }
 
 .banner__subtitulo {
-    animation: pisca normal infinite .8s, escrever normal 5s steps(19) both;
+    animation: pisca normal infinite .5s, escrever normal 4s steps(19) both;
     border-right: 2px solid #FDFDFD;
     font-family: 'Orbitron';
     font-size: 18px;
